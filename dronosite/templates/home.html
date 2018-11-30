@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+    <div class="home">
+        <div class="homecontain">
+
+        	<h1>Le Dronoscope</h1>
+            <h2>La solution vient du ciel</h2>
+
+            <div class="containslide">
+                <div class="slider">
+                    <div> <img src="{% static 'img/slider3.png' %}"> </div>
+                    <div> <img src="{% static 'img/slider1.png' %}"> </div>
+                    <div> <img src="{% static 'img/slider2.png' %}"> </div>
+                    <div> <img src="{% static 'img/slider4.png' %}"> </div>
+                </div>
+            </div>
+            <h3>"Bienvenue chez le dronoscope,</h3>
+            <h4>Le pilote de drone qu'il vous faut !""</h4>
+
+        </div>
+    </div>
+{% endblock content %}
+
+{% block script %}
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'bxslider/dist/jquery.bxslider.min.js' %}"></script>
+{% endblock script %}

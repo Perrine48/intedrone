@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+    <div class="contact">
+        <div class="contactcontain">
+
+        	<h1>Contacter le Dronoscope</h1>
+            <h2>Obtenez votre devis gratuit !</h2>
+
+            <form action="contact.html" method="post">
+
+                <label for="name">Votre nom et prénom</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="company">Dénomination sociale (si vous êtes une entreprise)</label>
+                <input type="text" name="company" id="company">
+
+                <label for="mail">Votre adresse email</label>
+                <input type="email" name="mail" id="mail" required>
+
+                <label for="phone">Votre numéro de téléphone (facultatif)</label>
+                <input type="text" name="phone" id="phone">
+
+                <label for="project">Décrivez brièvement le projet que vous souhaitez confier au Dronoscope</label>
+                <textarea name="project" rows="15" cols="80" id="project" required></textarea>
+
+                {# <div class="g-recaptcha" data-sitekey="6Le7AX4UAAAAAKYO3nhf3I7lhu-fu0ozL5CI6yFg"></div> #}
+
+                <button type="submit" name="envoyer">Envoyer</button>
+
+            </form>
+
+        </div>
+    </div>
+{% endblock content %}

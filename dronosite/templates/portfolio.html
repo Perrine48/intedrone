@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+    <div class="portfolio">
+        <div class="portfoliocontain">
+
+        	<h1>Portfolio</h1>
+            <h2>Les oeuvres du dronoscope</h2>
+
+            <div class="filtre">
+                <h3>Filtrer par</h3>
+                <a href="#" class="filter">&bull; Modélisation 3D</a>
+                <a href="#" class="filter">&bull; Photographie</a>
+                <a href="#" class="filter">&bull; Vidéos</a>
+            </div>
+
+            <div class="examplediv">
+
+                <a class="example" href="#">
+                    <div class="linkcontain">
+                        <img src="{% static 'img/civp.png' %}">
+                        <i class="fas fa-tv"></i>
+                        <h4>Clip Civp images drone</h4>
+                    </div>
+                </a>
+                <a class="example" href="#">
+                    <div class="linkcontain">
+                        <img src="{% static 'img/camargue.png' %}">
+                        <i class="far fa-file-image"></i>
+                        <h4>La Camargue</h4>
+                    </div>
+                </a>
+                <a class="example" href="#">
+                    <div class="linkcontain">
+                        <img src="{% static 'img/vigneron.png' %}">
+                        <i class="fas fa-tv"></i>
+                        <h4>trouvetonvigneron.com</h4>
+                    </div>
+                </a>
+                <a class="example" href="#">
+                    <div class="linkcontain">
+                        <img src="{% static 'img/barrage.png' %}">
+                        <i class="fas fa-paperclip"></i>
+                        <h4>barrage de rouvière mod3d</h4>
+                    </div>
+                </a>
+                <a class="example" href="#">
+                    <div class="linkcontain">
+                        <img src="{% static 'img/aqueduc.png' %}">
+                        <i class="fas fa-paperclip"></i>
+                        <h4>aqueduc, hérault mod3d</h4>
+                    </div>
+                </a>
+                <a class="example" href="#">
+                    <div class="linkcontain">
+                        <img src="{% static 'img/cirque.png' %}">
+                        <i class="fas fa-tv"></i>
+                        <h4>cirque de navacelle</h4>
+                    </div>
+                </a>
+                <a class="example" href="#">
+                    <div class="linkcontain">
+                        <img src="{% static 'img/lot.png' %}">
+                        <i class="fas fa-tv"></i>
+                        <h4>la région du lot</h4>
+                    </div>
+                </a>
+                <a class="example" href="#">
+                    <div class="linkcontain">
+                        <img src="{% static 'img/rochefort.png' %}">
+                        <i class="far fa-file-image"></i>
+                        <h4>rochefort du gard</h4>
+                    </div>
+                </a>
+
+            </div>
+
+            <input type="button" name="voir" value="voir tout">
+
+        </div>
+    </div>
+{% endblock content %}

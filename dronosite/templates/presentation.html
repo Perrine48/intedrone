@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+    <div class="presentation">
+        <div class="presentationcontain">
+
+        	<h1>A propos du Dronoscope</h1>
+            <h2>Une Alchimie complexe pour un pilote en or !</h2>
+
+            <div class="pilote">
+                <img src="{% static 'img/pilote.png' %}">
+                <h3>Le pilote</h3>
+                <h4>Un poil de barbe</h4>
+                <hr>
+                <p>Jeune, curieux, dynamique, passionné ... Mais non d'un drone en tutu est-ce là une énième lettre de motivation stéréotypée me diriez vous (ne mentez pas, vous y avez pensé) ? Et bien que nenni chers visiteurs ! Vous avez bien là un pilote qui, armé de son savoir-faire (et de sa barbe !), a fort envie d'en découdre avec les challenges que vous pourrez lui proposer ! Un appel, un mail et hop ! Voilà votre super pilote qui viendra voler à votre rescousse !</p>
+            </div>
+
+            <div class="diplome">
+                <img src="{% static 'img/diplome.png' %}">
+                <h3>Triple Diplôme</h3>
+                <h4>Une pincée de diplômes</h4>
+                <hr>
+                <p>Non content d'être ma foi fort sympathique, notre pilote possède aussi un parcours des plus atypique : diplôme d'Ingénieur des Sciences de l'Eau de Polytech'Montpellier, diplôme de Manager de la Communication et du Marketing de Sup de Com' et bien sûr, la cerise sur le gâteau (n'oubliez pas de manger cinq fruits et légumes par jour toutefois), un diplôme de pilote de drone agréé par la DGAC !</p>
+            </div>
+
+            <div class="qualite">
+                <img src="{% static 'img/label.png' %}">
+                <h3>Label Qualité</h3>
+                <h4>Une dose de bonne humeur</h4>
+                <hr>
+                <p>Ne trouvez-vous pas que l'idée d'un travail sérieux et la bonne humeur sont, hélas, considérés comme antinomiques (oui il fallait le sortir ce mot) ? Un bon travail est une bonne chose mais un bon travail avec le sourire c'est mieux ! Et oui, car notre bien aimé pilote, attention spoiler, aime ce qu'il fait et le fait bien qui plus est ! Quand on vous disait qu'il était passionné... et en plus il a des tarifs très compétitifs !</p>
+            </div>
+
+            <div class="multi">
+                <img src="{% static 'img/multi.png' %}">
+                <h3>Multi-Tâche</h3>
+                <h4>Et beaucoup de savoir-faire</h4>
+                <hr>
+                <p>Photo, vidéo, réalisation de clip, inspection, modélisation 3D, instructeur drone etc... C'est qu'il sait en faire des choses ce pilote ! Et pour cause ! Il est touche-à-tout et très curieux d'en apprendre toujours plus, en plus d'être en mesure de s'adapter très vite à vos besoins spécifiques, notre pilote barbu saura trouver dans sa hotte d'expériences LA solution qui vient du ciel.</p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
